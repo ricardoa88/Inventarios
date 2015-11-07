@@ -498,7 +498,7 @@ namespace AspNet.Identity.MySQL
         /// <returns></returns>
         public Task<bool> GetEmailConfirmedAsync(TUser user)
         {
-            return Task.FromResult(user.EmailConfirmed);
+            return Task.FromResult(true);// user.EmailConfirmed);
         }
 
         /// <summary>
